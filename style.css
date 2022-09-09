@@ -1,0 +1,206 @@
+:root{
+          --main-color: #193e46;
+}
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+body{
+          font-size: "Open sana", sans-serif;
+          color: #fff;
+}
+ .game{
+          background-color:#bbc7d5;
+          min-height: 100vh;
+ }
+
+ .container{
+          margin: auto;
+          max-width: 900px;
+          
+ }
+ .name{
+          background-color: var(--main-color);
+          color: #FFF;
+          padding: 25px;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+ }
+
+ .heading{
+          position: relative;
+          font-weight: bold;
+          display: flex;
+          gap: 10px;
+          font-size: 25px;
+          justify-content: center;
+ }
+ .heading .menu{
+          display: none;
+          background-color: #555c5f;
+          margin:6px -75px;
+          text-align: center;
+          font-size: 14px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px 1px #3b7c29;
+}
+.heading i {
+          font-size: 25px;
+          align-items: center;
+          cursor: pointer;
+          justify-content: center;
+ }
+.heading .menu p:hover{
+          color: #92d880;
+          background-color: #222;
+}
+.heading .menu p{
+          cursor: pointer;
+          padding: 10px;
+          transition: .5s;
+          letter-spacing: 2px;
+          justify-content: center;
+}
+.show{
+          display: block !important;
+}
+ .message{
+          background-color: var(--main-color);
+          padding: 15px;
+          margin: 15px 0;
+          border-radius: 10px;
+          text-align: center;
+ }
+
+ .message span{
+          font-weight: bold;
+          color:#66aabc
+ }
+
+ .message span::after{
+          content: " ]";
+ }
+ .message span::before{
+          content: "[ ";
+ }
+ 
+ .start-play {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #5b775e;
+          color: #ffffff;
+}
+ button {
+          position: relative;
+          background-color: transparent;
+          padding: 10px 20px;
+          color: #ffffff;
+          border: none;
+          font-size: 1.9em;
+          transform: none;
+          cursor: pointer;
+}
+      
+button:after {
+          content: "";
+          height: 100%;
+          width: calc(100% + 20px);
+          position: absolute;
+          top: -2px;
+          left: -10px;
+          border-top: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          transition: 1s;
+}
+      
+button:before {
+          content: "";
+          height: calc(100% + 20px);
+          width: 100%;
+          position: absolute;
+          top: -10px;
+          left: -2px;
+          border-left: 2px solid #fff;
+          border-right: 2px solid #fff;
+          transition: 1s;
+}
+      
+button:hover:before {
+          transform: rotateY(180deg);
+}
+      
+button:hover:after {
+          transform: rotateX(180deg);
+}
+ .the-word{
+          text-align: center;
+          font-size: 50px;
+          font-weight: bold;
+          color: rgb(25, 0, 255);
+          user-select: none;
+ }
+
+ .input{
+          margin: 15px 0;
+          width: 100%;
+          display: block;
+          padding: 15px;
+          border: 3px solid var(--main-color);
+          font-size: 20px;
+          text-align: center;
+          text-transform: capitalize;
+          border-radius: 15px;
+          caret-color: var(--main-color);
+ }
+ .inpot:focus{
+          outline: none;
+ }
+ .upcoming-words{
+          background-color: var(--main-color);
+          padding: 15px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          border-radius: 12px;
+ }
+ .upcoming-words div{
+          background-color: var(--main-color);
+          color: #fff;
+          font-weight: bold;
+          margin: 4px;
+          padding: 10px;
+          border-radius: 12px;
+ }
+ .control{
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          background-color: var(--main-color);
+          padding: 15px;
+          border-radius: 12px;
+ }
+
+.control span{
+          font-weight: bold;
+          color: #66aabc;
+}
+.finish{
+          font-weight: bold;
+          font-size: 40px;
+          text-align: center;
+          padding: 15px;
+}
+.finish .good{
+          color: var(--main-color);
+}
+
+.finish .bad{
+          color: red;
+}
+
